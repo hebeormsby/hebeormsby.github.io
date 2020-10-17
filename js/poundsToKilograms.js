@@ -10,5 +10,5 @@ function poundsToKilograms(){
     kilograms = Math.round(kilograms * multiplier) / multiplier;
 
     //Output: display number in kilograms
-    document.getElementById('output').innerHTML = x + " pounds converts to  kilograms + " kilograms.";
+    document.getElementById('output').innerHTML = x + " pounds converts to " kilograms + " kilograms.";
 }
