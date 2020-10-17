@@ -1,11 +1,14 @@
 function PoundsToKilograms(){
-    //input
-    let pounds = parseFloat(document.getElementById ('pounds').Value);
+    //Input: enter amount in pounds
+    let x = parseFloat(document.getElementById('pounds').value);
 
-    //processing
-        //the conversion factor from pounds to kg is 0.45359237
-    let kilograms = pounds*0.45359237;
+    //Irocessing: convert pounds to kilograms
+    let kilograms = x *0.453592;
+    //Round to the 10th decimal place
+    let digits = 1;
+    let multiplier = Math.pow(10, digits);
+    kilograms = Math.round(kilograms * multiplier) / multiplier;
 
-    //output
-    document.getElementById('output').textContent = Kilograms.toFixed(1)+"kg.";
+    //Output: display number in kilograms
+    document.getElementById('output').innerHTML = x + "pounds converts to" + kilograms + "kilograms.";
 }
