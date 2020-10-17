@@ -1,4 +1,4 @@
-function PoundsToKilograms(){
+function poundsToKilograms(){
     //Input: enter amount in pounds
     let x = parseFloat(document.getElementById('pounds').value);
 
