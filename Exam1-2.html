@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 Exam 1 - Part 2: Question 1 - Hebe Ormsby</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Exam 1 - Part 2: Question 1</h1>
+        <h2>Hebe Ormsby</h2>
+    </header>
+    <main>
+        <h3>Calculate Net Pay</h3>
+        <label>Enter Total Regular Hours <input type="text" id="regular"></label>
+        <label>Enter Total Overtime Hours <input type="text" id="overtime"></label>
+        <label><button type="button" onclick="grossToNet()">Calculate</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+        &copy;2020 &bull; Hebe Ormsby &bull; BYU-Idaho &bull; CIT 160
+    </footer>  
+    <script>
+        function grossToNet(){
+    //Input: enter number of regular hours
+    let x = parseFloat(document.getElementById('regular').value);
+    let y = parseFloat(document.getElementById('overtime').value);
+
+    //Processing: multiply input value of x by the constant $15 regular pay rate
+    let regular = x * 15;
+    //Processing: multiply input value of y by the constant $22.50 overtime pay rate
+    let overtime = y * 22.50;
+    let total = regular + overtime
+    //Processing: multiply the sum of x and y by the constant 15% tax amount
+    let tax = .15 * total
+    let net = total - tax
+    //Round to the nearest hundreth
+    let digits = 2;
+    let multiplier = Math.pow(10, digits);
+    net = Math.round(net * multiplier) / multiplier;
+
+    //Output: display pay after calculating tax
+    document.getElementById('output').innerHTML = "Pay after tax is $" + net + ".";
+}
+    </script>
+</body>
+</html>
