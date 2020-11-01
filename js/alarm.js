@@ -11,15 +11,12 @@ function alarm() {
         message = 'Sleep In!';
     }
 
-    // Processing: Define/check which days are considered a weekday
-    else if (dayofWeek == 0) {
-    message = 'Sleep In!';
-    }
-    else if (dayofWeek == 6) {
-    message = 'Sleep In!';
+    // Processing: Define/check which days are considered a weekend day
+    else if (dayofWeek === 0 || dayofWeek === 6) {
+        message = 'Sleep In!';
     }
     else {
-    message = 'Get Up!';
+        message = 'Get Up!';
     }
 
     //Output: displays message
