@@ -12,7 +12,10 @@ function alarm() {
     }
 
     // Processing: Define/check which days are considered a weekday
-    else if (dayofWeek == 0 || dayofWeek == 6) {
+    else if (dayofWeek == 0) {
+    message = 'Sleep In!';
+    }
+    else if (dayofWeek == 6) {
     message = 'Sleep In!';
     }
     else {
