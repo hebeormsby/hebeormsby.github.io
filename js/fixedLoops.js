@@ -34,7 +34,7 @@ function fixedLoops() {
     let n = 30;
 
     for ( let s = 0; s < n; s++) {
-        interest = balance * rate;
+        let interest = balance * rate;
         balance += interest;
     }
 
@@ -52,4 +52,4 @@ while (i < 3); {
     i++;
 }
 
-//
+//I believe the increment expression needs to come before the statement, or the initial/conditional/increment expressions can be executed with a for loop.
