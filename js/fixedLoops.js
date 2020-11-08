@@ -29,12 +29,12 @@ function fixedLoops() {
     }
 
     //Fix #4
-    let balance = 10000;
+    let balance = 1000;
     const rate = .10;
     let n = 30;
 
     for ( let s = 0; s < n; s++) {
-        let interest = balance * rate;
+        interest = balance * rate;
         balance += interest;
     }
 
@@ -42,7 +42,7 @@ function fixedLoops() {
     document.getElementById('display1').innerHTML = output1;
     document.getElementById('display2').textContent = output2;
     document.getElementById('display3').textContent = output3;
-    document.getElementById('display4').textContent = balance;
+    document.getElementById('display4').textContent = interest.toFixed(2);
 }
 
 //Fix #5
