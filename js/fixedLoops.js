@@ -33,7 +33,7 @@ function fixedLoops() {
     const rate = .10;
     let n = 30;
 
-    for (s = 0; s < n; s++) {
+    for ( let s = 0; s < n; s++) {
         interest = balance * rate;
         balance += interest;
     }
