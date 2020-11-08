@@ -52,4 +52,4 @@ while (i < 3); {
     i++;
 }
 
-//I believe the initial/conditional/increment expressions can be executed with a for loop.
+//The semi-colon after while is not supposed to be there.
