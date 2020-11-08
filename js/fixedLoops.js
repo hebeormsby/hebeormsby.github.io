@@ -52,4 +52,4 @@ while (i < 3); {
     i++;
 }
 
-//I believe the increment expression needs to come before the statement, or the initial/conditional/increment expressions can be executed with a for loop.
+//I believe the initial/conditional/increment expressions can be executed with a for loop.
