@@ -31,7 +31,7 @@ function doBalance() {
 function computePayment(principal, annual, years, periods) {
 
     //Returns payment
-    return (principal * (annual/periods)) / (1 - (1 + annual/periods))**-(years*periods);
+    return (principal * (annual/periods)) / (1 - (1 + annual/periods)**-(years*periods));
 }
 
 function computeBalance(principal, annual, years, periods, toDate) {
