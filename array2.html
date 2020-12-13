@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 160 Arrays2</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Week 13: Arrays Part 2</h1>
+        <h2>Hebe Ormsby</h2>
+    </header>
+    <main>
+        <h3>Evens and Multipliers</h3>
+        <label><button onclick="test()">Click Me</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+        <script>
+            /* Defining Table
+            * Input: no user input
+            * Processing: Test the addEnds and getMiddle functions by calling them.
+            * Output: The values returned from the addEnds and getMiddle functions.
+            */
+            function test() {
+                let list1 = [ 17, 8, 9, 5, 20 ];
+                let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+
+                 // Test the countEvens function by calling it two times.
+                let count1 = countEvens(list1);
+                let count2 = countEvens(list2);
+
+                // Test the multiply function by calling it two times.
+                let mult1 = multiply(list1, 3);
+                let mult2 = multiply(list2, 2);
+
+                // Build a string to display to the user.
+                let output =
+                        'The amount of even numbers in List One is ' + count1 + '<br>' +
+                        'The amount of even numbers in List Two is ' + count2 + '<br>' +
+                        'The multiplier of List One is ' + mult1 + '<br>' +
+                        'The multiplier of List Two is ' + mult2;
+
+                // Display the output string for the user to see.
+                document.getElementById('output').innerHTML = output;
+            }
+
+            function countEvens(list) {
+                let even = 0;
+
+                for (let i = 0; i < list.length; i++) {
+                    if (list[i] % 2 === 0) {
+                        even++;
+                    }
+                }
+                return even;
+            }
+
+            function multiply(list, multiplier) {
+                return list.map(function (list){
+                return list * multiplier;
+                });
+            }
+        </script>
+    </main>
+    <footer>
+        &copy;2020 &bull; Hebe Ormsby &bull; BYU-Idaho &bull; CIT 160
+    </footer>  
+</body>
+</html>
