@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Roboto&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #0A2404;
+  }
+  header,
+  footer {
+    background: #acf39d;
+    border-radius: 15px;
+  }
+  h1,
+  h2 {
+    margin: 0 0 0 50px;
+    padding: 20px 0 20px 0;
+  }
+  img {
+    float: right;
+    margin: 20px 15px 0 0;
+    border-color: #353945;
+    border-radius: 1px;
+    box-shadow: 2px 2px 2px 2px #52545e;
+  }
+  nav ul li {
+    line-height: 1.5em;
+  }
+  .footertext {
+    margin: 0 0 0 50px;
+    padding: 20px 0 20px 0;
+  }
+  p {
+    margin: 0 0 0 50px;
+    padding: 20px 0 20px 0;
+    text-align: center;
+  }
